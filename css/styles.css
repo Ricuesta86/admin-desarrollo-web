@@ -33,3 +33,14 @@ body.login .contenido{
 .btn-primary:hover{
     background-color: #04577e !important;
 }
+
+/* Barra lateral */
+
+aside{
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    margin-top: 56px;
+    top: 0;
+    bottom: 0;
+}
