@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-      <nav class="navbar bd-navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav class="navbar bd-navbar navbar-expand-lg navbar-dark bg-primary  ">
         <a href="#" class="navbar-brand">Administracion de Libreria</a>
 
 
@@ -76,13 +76,61 @@
 <main class="pt-4">
   <div class="container">
     <h2 class="text-center mb-4">Administración de Clientes</h2>
-  <div class="row text-center justify-content-center align-middel">
+  <div class="row text-center panel justify-content-center align-middle">
     <div class="col-lg-3 col-md-6 col-12">
-      <div class="botton bg-success d-flex align-items-center justify-content-center p-3"><a href="nuevo-cliente.html" class="text-light"><i class="material-icons">add</i>
-        <p>Nuevo</p></a></div>
+      <div class="botton bg-success d-flex align-items-center justify-content-center p-3">
+        <a href="nuevo-cliente.html" class="text-light"><i class="material-icons">add</i>
+          <p class="m-0">Nuevo</p>
+        </a>
+      </div>
     </div>
-  </div>
-  </div>
+  </div><!--.row-->
+  <h3 class="text-center mt-4">Listado de Cliente</h3>
+
+  <table class="table mt-3">
+    <caption>Listado actualizado ...</caption>
+    <thead>
+      <tr>
+        <th class="scope">ID</th>
+        <th class="scope">Nombre</th>
+        <th class="scope">Apellidos</th>
+        <th class="scope">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Roberto</td>
+        <td>Iglesias</td>
+        <td>
+          <a href="#" class="btn btn-danger">Borrar</a>
+          <a href="#" class="btn btn-success">Editar</a>
+          <a href="#" class="btn btn-primary">Ver</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Roberto</td>
+        <td>Iglesias</td>
+        <td>
+          <a href="#" class="btn btn-danger">Borrar</a>
+          <a href="#" class="btn btn-success">Editar</a>
+          <a href="#" class="btn btn-primary">Ver</a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Roberto</td>
+        <td>Iglesias</td>
+        <td>
+          <a href="#" class="btn btn-danger">Borrar</a>
+          <a href="#" class="btn btn-success">Editar</a>
+          <a href="#" class="btn btn-primary">Ver</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div><!--.container-->
 </main>
 
 
