@@ -6,23 +6,123 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- font_awesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/material-icons.css">
     <!-- font -->
     <link rel="stylesheet" href="css/fonts.css">
     <!-- Morris -->
     <!-- <link rel="stylesheet" href=""> -->
     <!-- my style -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-      
+      <nav class="navbar bd-navbar navbar-expand-lg navbar-dark bg-primary  ">
+          <a href="#" class="navbar-brand">Administracion de Libreria</a>
+
+          <button   class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegacion" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="navbar-collapse collapse" id="navegacion">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <form action="#" class="my-2 my-lg-0">
+                    <input type="search" class="form-control" placeholder="Buscar...." >
+                  </form>
+                 </div><!--.col-->
+                 <div class="col-ms-2 text-right">
+                    <a href="#" class="btn btn-success px-5 text-light my-2 my-lg-0">Perfil</a>
+                 </div>
+               </div>
+              </div>
+            </div>
+        </nav>
+        <!-- Barra lateral -->
+        <aside class="bg-dark p-4">
+          <h3 class="text-light text-center">
+            Navegación
+          </h3>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light d-flex algin-items-center">
+                  <i class="material-icons mr-2">contacts</i>
+                Clientes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light d-flex algin-items-center">
+                  <i class="material-icons mr-2">attach_money</i>
+                Ventas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light d-flex algin-items-center">
+                <i class="material-icons mr-2">dvr</i>
+                Inventario
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light d-flex algin-items-center">
+                <i class="material-icons mr-2">account_box</i>
+                Vendedores
+              </a>
+            </li>
+          </ul>
+        </aside>
+  <!-- Principal -->
+  <main class="pt-4">
+    <div class="container">
+      <h2 class="text-center mb-4">
+        Nuevo Cliente
+      </h2>
+      <div class="row">
+        <div class="col">
+          <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre del Cliente" required>
+              <div class="invalid-feedback">
+                Este campo es obligatorio
+              </div>
+              <div class="valid-feedback">
+                Correcto
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="apellidos">Apellidos:</label>
+              <input type="text" name="apellidos" id="apellidos" class="form-control" placeholder="Apellidos del Cliente" required>
+              <div class="invalid-feedback">
+                Este campo es obligatorio
+              </div>
+              <div class="valid-feedback">
+                Correcto
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo:</label>
+              <input type="email" name="correo" id="correo" class="form-control" placeholder="Correo Electronico" required>
+              <div class="invalid-feedback">
+                Este campo es obligatorio
+              </div>
+              <div class="valid-feedback">
+                Correcto
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success">Agregar Cliente</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
