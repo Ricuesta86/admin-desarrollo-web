@@ -73,3 +73,9 @@ main{
 .botton a:hover{
     color: white!important;
 }
+
+/* Ventas */
+
+#ventas{
+    height: 250px;
+}
